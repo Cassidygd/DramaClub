@@ -1,3 +1,23 @@
 html{
   background-color: #bfbfbf;
 }
+.navbar{
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #FFF;
+  color: #FFF;
+  padding: .3% 0;
+  font-size: 1.5em;
+  border: 0;
+}
+.navbar-brand{
+  float: left;
+  min-height: 40px;
+  padding: 0 15px 5px;
+}
+.nav-item {
+  padding: 30px;
+  font-size: 1.2em;
+  font-family: 'Playfair Display', serif;
+  border
+}

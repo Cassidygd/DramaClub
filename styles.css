@@ -6,18 +6,38 @@ html{
   border-radius: 0;
   background-color: #FFF;
   color: #FFF;
-  padding: .3% 0;
+  padding: .05% 0;
   font-size: 1.5em;
   border: 0;
+  height: 110px;
 }
 .navbar-brand{
   float: left;
   min-height: 40px;
-  padding: 0 15px 5px;
+  padding: 0 10px 0;
 }
 .nav-item {
   padding: 30px;
   font-size: 1.2em;
   font-family: 'Playfair Display', serif;
   border
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: white;
+}
+
+.flex-container > div {
+  color: black;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 350px;
+  font-size: 30px;
+  background-color: white;
+}
+#movie {
+  border: 30px solid gold;
 }

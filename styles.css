@@ -1,21 +1,24 @@
 html{
   background-color: #bfbfbf;
 }
+
 .navbar{
   margin-bottom: 0;
   border-radius: 0;
-  background-color: #FFF;
-  color: #FFF;
+  background-color: #9E2020;
+  color: #9E2020;
   padding: .05% 0;
   font-size: 1.5em;
   border: 0;
   height: 110px;
 }
+
 .navbar-brand{
   float: left;
   min-height: 40px;
   padding: 0 10px 0;
 }
+
 .nav-item {
   padding: 30px;
   font-size: 1.2em;
@@ -26,18 +29,20 @@ html{
 .flex-container {
   display: flex;
   align-items: stretch;
-  background-color: white;
+  background-color: #bfbfbf;
 }
 
-.flex-container > div {
+.flex-container > div{
   color: black;
   width: 100px;
   margin: 10px;
   text-align: center;
-  line-height: 350px;
+  line-height: 300px;
   font-size: 30px;
   background-color: white;
 }
+
 #movie {
-  border: 30px solid gold;
+  border: 33px dotted #E9CB0E;
+  background-color: white;
 }

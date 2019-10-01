@@ -1,16 +1,16 @@
 html{
-  background-color: #bfbfbf;
+  background-color: #CBCBCB;
 }
 
 .navbar{
   margin-bottom: 0;
   border-radius: 0;
-  background-color: #9E2020;
-  color: #9E2020;
+  background-color: #B5B5B5;
+  color: #B5B5B5;
   padding: .05% 0;
   font-size: 1.5em;
   border: 0;
-  height: 110px;
+  height: 105px;
 }
 
 .navbar-brand{
@@ -22,14 +22,15 @@ html{
 .nav-item {
   padding: 30px;
   font-size: 1.2em;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Vidaloka', serif;
   border
 }
 
 .flex-container {
   display: flex;
   align-items: stretch;
-  background-color: #bfbfbf;
+  background-color: #CBCBCB;
+  padding-top: 20px;
 }
 
 .flex-container > div{
@@ -37,12 +38,24 @@ html{
   width: 100px;
   margin: 10px;
   text-align: center;
-  line-height: 300px;
+  line-height: 250px;
   font-size: 30px;
   background-color: white;
 }
 
 #movie {
-  border: 33px dotted #E9CB0E;
-  background-color: white;
+  border: 30px dotted #FAF9F6;
+  background-color: #E9CB0E;
+}
+.d-inline-flex {
+  background-color: #FAF9F6;
+  width: 1200px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 300px;
+}
+li {
+  display: inline-block;
+  border-left: 1px solid black;
+  height: 1px;
 }

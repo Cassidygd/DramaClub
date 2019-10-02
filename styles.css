@@ -10,20 +10,22 @@ html{
   padding: .05% 0;
   font-size: 1.5em;
   border: 0;
-  height: 105px;
+  height: 95px;
 }
 
 .navbar-brand{
   float: left;
   min-height: 40px;
-  padding: 0 10px 0;
+  padding: 10px;
+  padding-top: 22px;
 }
 
 .nav-item {
   padding: 30px;
   font-size: 1.2em;
   font-family: 'Vidaloka', serif;
-  border
+  height: 95px;
+  text
 }
 
 .flex-container {
@@ -56,6 +58,6 @@ html{
 }
 li {
   display: inline-block;
-  border-left: 1px solid black;
-  height: 1px;
+  border-left: 1px solid maroon;
+
 }

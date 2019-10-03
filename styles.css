@@ -1,8 +1,8 @@
-html{
+html {
   background-color: #CBCBCB;
 }
 
-.navbar{
+.navbar {
   margin-bottom: 0;
   border-radius: 0;
   background-color: #B5B5B5;
@@ -13,7 +13,7 @@ html{
   height: 95px;
 }
 
-.navbar-brand{
+.navbar-brand {
   float: left;
   min-height: 40px;
   padding: 10px;
@@ -35,7 +35,7 @@ html{
   padding-top: 20px;
 }
 
-.flex-container > div{
+.flex-container>div {
   color: black;
   width: 100px;
   margin: 10px;
@@ -49,6 +49,7 @@ html{
   border: 30px dotted #FAF9F6;
   background-color: #E9CB0E;
 }
+
 .d-inline-flex {
   background-color: #FAF9F6;
   width: 1200px;
@@ -56,8 +57,28 @@ html{
   margin-bottom: 8px;
   height: 300px;
 }
+
 li {
   display: inline-block;
   border-left: 1px solid maroon;
+}
 
+h1 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #CBCBCB;
+  font-family: 'Vidaloka', serif;
+  font-size: 55px;
+}
+
+.carousel {
+  padding: 25px 100px 100px;
+  background-color: #CBCBCB;
+}
+#director {
+  background-color: #CBCBCB;
+}
+#masks {
+  background-color: #CBCBCB;
 }

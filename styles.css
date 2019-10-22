@@ -56,6 +56,10 @@ html {
   margin-top: 8px;
   margin-bottom: 8px;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Noticia Text', serif;
+  font-size: 50px;
 }
 
 li {
@@ -97,4 +101,15 @@ h1 {
 
 .conn {
   background-color: #CBCBCB;
+}
+.vid {
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  background-color: #CBCBCB;
+}
+.showing {
+  font-size: 60px;
+  font-family: 'Noticia Text', serif;
+  font-weight: bold;
 }

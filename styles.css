@@ -26,10 +26,6 @@ html {
   font-size: 1.2em;
   font-family: 'Vidaloka', serif;
   height: 95px;
-  text
-}
-
-li {
   display: inline-block;
   border-left: 1px solid maroon;
 }
@@ -40,7 +36,6 @@ li {
   align-items: stretch;
   background-color: #CBCBCB;
   padding-top: 20px;
-
 }
 
 .flex-container>div {
@@ -53,15 +48,33 @@ li {
   background-color: white;
 }
 
+.shrek {
+  list-style-type: none;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.music {
+  font-size: 65px;
+  margin-bottom: 0;
+}
+
 .banner {
-  border: 35px dotted #FAF9F6;
+  border: 33px dotted #FAF9F6;
   background-color: #E9CB0E;
   height: 377px;
 }
 
+.two {
+  padding-top: 35px;
+}
+
+.trailer {
+  text-align: center;
+}
+
 #movie {
   background-color: #FAF9F6;
-  width: 12px;
   margin: 5px;
   height: 300px;
   display: flex;
@@ -70,10 +83,24 @@ li {
   font-size: 60px;
   width: 1170px;
 }
+ .box,
+ .boxx {
+   padding: 50px;
+   text-align: center;
+ }
+hr {
+  border-width: medium;
+  opacity: .9;
+  background-color: black;
+}
 
 .now {
-  font-size: 20px;
+  font-size: 60px;
 }
+.boxx {
+  font-size: 60px;
+}
+
 .col-md-2 {
   align-items: baseline;
 }
@@ -87,7 +114,7 @@ h1 {
   font-size: 55px;
 }
 
-/* gallery*/
+/* gallery
 .carousel {
   background-color: #CBCBCB;
   height: 550px;
@@ -96,6 +123,44 @@ h1 {
   margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+*/
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 66%;
+  -moz-column-width: 66%;
+  column-width: 66%;
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
 }
 
 //* aboutus*/
@@ -113,14 +178,13 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
-  align-items: center;
   justify-content: center;
-  align-content: center;
+  background-color: #CBCBCB;
 }
 
 //* calendar*/
-.tent {
-  background-color: #CBCBCB;
+.conn {
+  color: #CBCBCB;
 }
 
 .vid {
@@ -134,7 +198,6 @@ h1 {
 font-size: 60px;
 font-family: 'Noticia Text', serif;
 font-weight: bold;
-} */
-.container-fluid .cards {
-  justify-content: center;
 }
+
+*/

@@ -179,7 +179,10 @@ h1 {
   margin-right: auto;
   padding-top: 10px;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   background-color: #CBCBCB;
+  text-align: center;
 }
 
 //* calendar*/

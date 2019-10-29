@@ -1,40 +1,40 @@
 html {
-  background-color: #CBCBCB;
+  background-image: url("https://cdn11.bigcommerce.com/s-cfnl8/images/stencil/600x600/products/2755/4851/double_down_black_pr__73278.1531421213.jpg?c=2&imbypass=on");
 }
 
 /* navigation*/
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
-  background-color: #B5B5B5;
-  color: #B5B5B5;
-  padding: .05% 0;
+  background-color: white;
+  color: white;
+  padding: .1% 0;
   font-size: 1.5em;
   border: 0;
-  height: 95px;
+  height: 65px;
 }
-
 .navbar-brand {
   float: left;
   min-height: 20px;
   padding: 10px;
-  padding-top: 22px;
+  padding-top: 1%;
+  mix-blend-mode: multiply;
 }
 
 .nav-item {
   padding: 30px;
+  padding-top: 20px;
   font-size: 1.2em;
   font-family: 'Vidaloka', serif;
   height: 95px;
   display: inline-block;
-  border-left: 1px solid maroon;
 }
 
 /*index*/
 .container-fluid {
   display: run-in;
   align-items: stretch;
-  background-color: #CBCBCB;
+  background-image: url("https://cdn11.bigcommerce.com/s-cfnl8/images/stencil/600x600/products/2755/4851/double_down_black_pr__73278.1531421213.jpg?c=2&imbypass=on");
   padding-top: 20px;
 }
 
@@ -71,6 +71,7 @@ html {
 
 .trailer {
   text-align: center;
+
 }
 
 #movie {
@@ -109,7 +110,7 @@ h1 {
   text-align: center;
   padding-top: 22px;
   padding-bottom: 22px;
-  background-color: #CBCBCB;
+  background-color: #DABDBD;
   font-family: 'Vidaloka', serif;
   font-size: 55px;
 }
@@ -165,36 +166,37 @@ h1 {
 
 //* aboutus*/
 #director {
-  background-color: #CBCBCB;
+  background-color: #DABDBD;
 }
 
 #masks {
-  background-color: #CBCBCB;
-}
-
-//* calendar*/
-#content {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  background-color: #CBCBCB;
-  text-align: center;
+  background-color: #DABDBD;
 }
 
 //* calendar*/
 .conn {
-  color: #CBCBCB;
+  background-color: #DABDBD;
+
+
 }
+#cal {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background-color: #DABDBD;
+  align-items: center;
+  mix-blend-mode: multiply;
+
+}
+
+//* calendar*/
 
 .vid {
   align-items: center;
   text-align: center;
   padding-top: 30px;
-  background-color: #CBCBCB;
+  background-color: #DABDBD;
 }
 
 //*.showing {
@@ -204,3 +206,7 @@ font-weight: bold;
 }
 
 */
+.footer {
+  color: white;
+  background-color: white;
+}

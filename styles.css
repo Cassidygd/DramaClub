@@ -1,5 +1,5 @@
 html {
-  background-image: url("https://www.stargatecinema.com/images/T/Intermission%20Field%20536088%20c7011-2black22.gif");
+  background-image: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
 }
 
 /* navigation*/
@@ -13,6 +13,7 @@ html {
   border: 0;
   height: 65px;
 }
+
 .navbar-brand {
   float: left;
   min-height: 20px;
@@ -34,7 +35,7 @@ html {
 .container-fluid {
   display: run-in;
   align-items: stretch;
-  background-image: url("https://www.stargatecinema.com/images/T/Intermission%20Field%20536088%20c7011-2black22.gif");
+  background-image: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
   padding-top: 20px;
 }
 
@@ -67,7 +68,6 @@ html {
   padding: 0 5px;
   box-sizing: border-box;
   width: 1300px;
-
 }
 
 .two {
@@ -76,7 +76,6 @@ html {
 
 .trailer {
   text-align: center;
-
 }
 
 #movie {
@@ -89,11 +88,13 @@ html {
   width: 1180px;
   margin-top: 5px;
 }
- .box,
- .boxx {
-   padding: 50px;
-   text-align: center;
- }
+
+.box,
+.boxx {
+  padding: 50px;
+  text-align: center;
+}
+
 hr {
   border-width: medium;
   opacity: .9;
@@ -103,6 +104,7 @@ hr {
 .now {
   font-size: 60px;
 }
+
 .boxx {
   font-size: 60px;
 }
@@ -123,56 +125,23 @@ h1 {
   color: black;
 }
 
-/* gallery
-.carousel {
-  background-color: #CBCBCB;
+gallery .carousel {
   height: 550px;
   width: 900px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-*/
-.gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-width: 66%;
-  -moz-column-width: 66%;
-  column-width: 66%;
-}
 
-.gallery .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease;
-}
-
-.gallery .animation {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-@media (max-width: 450px) {
-  .gallery {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
+  @media (max-width: 400px) {
+    .btn.filter {
+      padding-left: 1.1rem;
+      padding-right: 1.1rem;
+    }
   }
 }
 
-@media (max-width: 400px) {
-  .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-  }
-}
-
-//* aboutus*/
+/* aboutus*/
 #director {
   background-color: #DABDBD;
 }
@@ -184,26 +153,23 @@ h1 {
 //* calendar*/
 .conn {
   background-color: #DABDBD;
-
-
 }
+
 #cal {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  background-color: #DABDBD;
+  background-color: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
   align-items: center;
-
 }
 
 //* calendar*/
-
 .vid {
   align-items: center;
   text-align: center;
   padding-top: 30px;
-  background-color: #DABDBD;
+  background-color: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
 }
 
 //*.showing {
@@ -213,10 +179,15 @@ font-weight: bold;
 }
 
 */
-.footer {
-  color: white;
-  background-color: white;
+
+#carousel {
+  padding-bottom: 20px;
 }
+
+.col-md-4 {
+  mix-blend-mode: multiply;
+}
+
 
 /*
 *
@@ -225,56 +196,54 @@ font-weight: bold;
 * ==========================================
 *
 */
-
 /* Timeline holder */
 ul.timeline {
-    list-style-type: none;
-    position: relative;
-    padding-left: 1.5rem;
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
 }
 
- /* Timeline vertical line */
+/* Timeline vertical line */
 ul.timeline:before {
-    content: ' ';
-    background: #fff;
-    display: inline-block;
-    position: absolute;
-    left: 16px;
-    width: 4px;
-    height: 100%;
-    z-index: 400;
-    border-radius: 1rem;
+  content: ' ';
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
 }
 
 li.timeline-item {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 /* Timeline item arrow */
 .timeline-arrow {
-    border-top: 0.5rem solid transparent;
-    border-right: 0.5rem solid #fff;
-    border-bottom: 0.5rem solid transparent;
-    display: block;
-    position: absolute;
-    left: 2rem;
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 2rem;
 }
 
 /* Timeline item circle marker */
 li.timeline-item::before {
-    content: ' ';
-    background: #ddd;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    left: 11px;
-    width: 14px;
-    height: 14px;
-    z-index: 400;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  content: ' ';
+  background: #ddd;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
 
 /*
 *
@@ -284,10 +253,23 @@ li.timeline-item::before {
 *
 */
 body {
-    background-image: url("https://www.stargatecinema.com/images/T/Intermission%20Field%20536088%20c7011-2black22.gif");
-    min-height: 100vh;
+  background-image: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
+  min-height: 100vh;
 }
 
 .text-gray {
-    color: #999;
+  color: #999;
+}
+/*footer*/
+.page-footer{
+  background-color: white;
+}
+/*card in gallery*/
+.card {
+  transition: 0.3s;
+  width: 20%;
+}
+
+.container {
+  padding: 2px 16px;
 }

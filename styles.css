@@ -70,9 +70,6 @@ html {
   width: 1300px;
 }
 
-.two {
-  padding-top: 35px;
-}
 
 .trailer {
   text-align: center;
@@ -89,8 +86,7 @@ html {
   margin-top: 5px;
 }
 
-.box,
-.boxx {
+.box{
   padding: 50px;
   text-align: center;
 }
@@ -105,9 +101,6 @@ hr {
   font-size: 60px;
 }
 
-.boxx {
-  font-size: 60px;
-}
 
 .col-md-2 {
   align-items: baseline;
@@ -164,7 +157,7 @@ gallery .carousel {
   align-items: center;
 }
 
-//* calendar*/
+/* calendar*/
 .vid {
   align-items: center;
   text-align: center;
@@ -272,4 +265,70 @@ body {
 
 .container {
   padding: 2px 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
 }

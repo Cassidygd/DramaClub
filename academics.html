@@ -43,13 +43,13 @@
     </div>
   </nav>
 
-<div class="row text-center text-white mb-5">
+  <div class="row text-center text-white mb-5">
     <div class="col-lg-8 mx-auto">
-      <h1 class="display-4">Drama </h1>
+      <h1 class="display-4">Academics</h1>
     </div>
   </div>
 
-<!--  <div class="container-tab">
+  <!--  <div class="container-tab">
   <h3>Tabs With Dropdown Menu</h3>
   <ul class="nav nav-tabs">
     <li class="active"><a href="#">Home</a></li>
@@ -65,21 +65,35 @@
     <li><a href="#">Menu 3</a></li>
   </ul>
 </div>-->
+  <div class="cta filter">
+    <a class="all active" data-filter="all" href="#" role="button">Show All</a>
+    <a class="green" data-filter="green" href="#" role="button">Show Green Boxes</a>
+    <a class="blue" data-filter="blue" href="#" role="button">Show Blue Boxes</a>
+    <a class="red" data-filter="red" href="#" role="button">Show Red Boxes</a>
+  </div>
 
-<ul class="nav flex-column listed">
-  <li class="nav-item tab">
-    <a class="nav-link active" href="#">Theater I</a>
-  </li>
-  <li class="nav-item tab">
-    <a class="nav-link" href="#">Theater II</a>
-  </li>
-  <li class="nav-item tab">
-    <a class="nav-link" href="#">Theater III</a>
-  </li>
-  <li class="nav-item tab">
-    <a class="nav-link" href="#">Theater IV</a>
-  </li>
-</ul>
+  <div class="boxes">
+    <a class="red" data-color="red" href="#">Box1</a>
+    <a class="green" data-color="green" href="#">Box2</a>
+    <a class="blue" data-color="blue" href="#">Box3</a>
+    <a class="green" data-color="green" href="#">Box4</a>
+    <a class="red" data-color="red" href="#">Box5</a>
+    <a class="green" data-color="green" href="#">Box6</a>
+    <a class="blue" data-color="blue" href="#">Box7</a>
+    <a class="red" data-color="red" href="#">Box8</a>
+    <a class="green" data-color="green" href="#">Box9</a>
+    <a class="blue" data-color="blue" href="#">Box10</a>
+    <a class="red" data-color="red" href="#">Box11</a>
+    <a class="green" data-color="green" href="#">Box12</a>
+    <a class="blue" data-color="blue" href="#">Box13</a>
+    <a class="green" data-color="green" href="#">Box14</a>
+    <a class="red" data-color="red" href="#">Box15</a>
+    <a class="blue" data-color="blue" href="#">Box16</a>
+  </div>
+
+
+
+
 
   <!-- Footer -->
   <footer class="page-footer py-4 ">
@@ -111,11 +125,46 @@
 
   </footer>
   <!-- Footer -->
+  <script>
+    (function($) {
+
+      'use strict';
+
+      var $filters = $('.filter [data-filter]'),
+        $boxes = $('.boxes [data-color]');
+
+      $filters.on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+
+        $filters.removeClass('active');
+        $this.addClass('active');
+
+        var $filterColor = $this.attr('data-filter');
+
+        if ($filterColor == 'all') {
+          $boxes.removeClass('is-animated')
+            .fadeOut().promise().done(function() {
+              $boxes.addClass('is-animated').fadeIn();
+            });
+        } else {
+          $boxes.removeClass('is-animated')
+            .fadeOut().promise().done(function() {
+              $boxes.filter('[data-color = "' + $filterColor + '"]')
+                .addClass('is-animated').fadeIn();
+            });
+        }
+      });
+
+    })(jQuery);
+  </script>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
+
 
 </html>

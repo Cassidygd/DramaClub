@@ -60,6 +60,7 @@ html {
   font-family: 'Diplomata', cursive;
   min-height: 80%;
   min-width: 80%;
+  list-style-position: outside;
 }
 
 /* Now Showing Sign*/
@@ -82,13 +83,40 @@ h4 {
 .now {
   font-size: 60px;
 }
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .now {
+    font-size: 60px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .now {
+    font-size: 30px;
+    margin-left: 0;
+  }
+}
 
 .music {
   font-size: 65px;
   margin-bottom: 0;
   font-family: 'Lobster', cursive;
 }
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .music {
+    font-size: 65px;
+  }
+}
 
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .music {
+    font-size: 40px;
+    margin-left: 0;
+  }
+}
 @media (min-with: 600px) {
   .sign {
     width: 100%;
@@ -123,6 +151,7 @@ h4 {
   margin-top: 5px;
   max-width: 100%;
   max-height: 100%;
+  text-align: center;
 }
 
 .box {
@@ -414,7 +443,7 @@ body {
 .foot {
   padding-top: 25px;
   align-content: center;
-  height: 55px;
+  height: 50px;
   background-color: white;
   padding-left: 20%;
 }
@@ -424,91 +453,22 @@ body {
   align-content: stretch;
   background-color: white;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.filterDiv {
+  float: left;
+  background-color: #D3D3D3;
+  color: black;
+  width: 550px;
+  height: 200px;
+  margin: 5px;
+  display: none;
 }
 
-li {
-  list-style-type: none;
-}
 
-a {
-  text-decoration: none;
+.show {
   display: block;
-  color: #333;
 }
 
-h2 {
-  color: #333;
-  padding: 10px 0;
-}
-
-.filter {
-  margin: 30px 0 10px;
-}
-
-.filter a {
-  display: inline-block;
-  padding: 10px;
-  border: 2px solid #333;
-  position: relative;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.boxes a {
-  width: 23%;
-  border: 2px solid #333;
-  margin: 0 1% 20px 1%;
-  line-height: 60px;
-}
-
-.all {
-  background: khaki;
-}
-
-.green {
-  background: lightgreen;
-}
-
-.blue {
-  background: lightblue;
-}
-
-.red {
-  background: lightcoral;
-}
-
-.filter a.active:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 15px 0 0;
-  border-color: #333 transparent transparent transparent;
-}
-
-.is-animated {
-  animation: .6s zoom-in;
-}
-
-@keyframes zoom-in {
-  0% {
-   transform: scale(.1);
-  }
-  100% {
-    transform: none;
-  }
+.container {
+  margin-top: 20px;
+  overflow: hidden;
 }

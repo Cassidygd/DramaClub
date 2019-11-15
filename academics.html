@@ -65,32 +65,26 @@
     <li><a href="#">Menu 3</a></li>
   </ul>
 </div>-->
-  <div class="cta filter">
-    <a class="all active" data-filter="all" href="#" role="button">Show All</a>
-    <a class="green" data-filter="green" href="#" role="button">Show Green Boxes</a>
-    <a class="blue" data-filter="blue" href="#" role="button">Show Blue Boxes</a>
-    <a class="red" data-filter="red" href="#" role="button">Show Red Boxes</a>
+
+  <div id="myBtnContainer classroom">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('one')"> Theater I</button>
+    <button class="btn" onclick="filterSelection('two')"> Theater II</button>
+    <button class="btn" onclick="filterSelection('three')"> Theater II</button>
   </div>
 
-  <div class="boxes">
-    <a class="red" data-color="red" href="#">Box1</a>
-    <a class="green" data-color="green" href="#">Box2</a>
-    <a class="blue" data-color="blue" href="#">Box3</a>
-    <a class="green" data-color="green" href="#">Box4</a>
-    <a class="red" data-color="red" href="#">Box5</a>
-    <a class="green" data-color="green" href="#">Box6</a>
-    <a class="blue" data-color="blue" href="#">Box7</a>
-    <a class="red" data-color="red" href="#">Box8</a>
-    <a class="green" data-color="green" href="#">Box9</a>
-    <a class="blue" data-color="blue" href="#">Box10</a>
-    <a class="red" data-color="red" href="#">Box11</a>
-    <a class="green" data-color="green" href="#">Box12</a>
-    <a class="blue" data-color="blue" href="#">Box13</a>
-    <a class="green" data-color="green" href="#">Box14</a>
-    <a class="red" data-color="red" href="#">Box15</a>
-    <a class="blue" data-color="blue" href="#">Box16</a>
+  <div class="container filter">
+    <div class="filterDiv one">Theater I is a survey course, an over view of all things theatrical from acting to producing to writing to theater history. This course will include an overview of theatre arts, including acting, play production,
+      playwriting, motion picture, radio and television drama, and reader's theatre. </div>
+    <div class="filterDiv two">Theater II is a course that focuses on the production side of theater, specifically the creation of scripts and how they are brought to life on stage. Students in Theater II should expect to tackle the unique challenges
+      faced by directors and designers who take a script for “page to stage”.
+      This second course in theatre arts will continue the development of skills introduced in Theatre I. Students will have an opportunity to study many different playwrights and produce one or two plays for the public. Some rehearsal and
+      performance responsibilities beyond the regularly scheduled school day are to be expected. </div>
+    <div class="filterDiv three">Theater III is an acting class. Students in Theater III will participate in improvisational acting, physical acting, vocal control exercises, audition techniques and performance in a short play.
+      The class will read, rehearse, and perform excerpts from dramatic literature, poetry, and prose. Students will be given opportunities to perform these cuttings locally as well as at selected forensic tournaments. The course of study will
+      include solo and duo acting, humorous and dramatic interpretation, radio and television script reading, introduction to debate, and one-act play performance. Theatre III should be considered by only the most serious students of the dramatic
+      arts as substantial rehearsal and performance responsibilities beyond the regularly scheduled school day are to be expected. This course may be repeated for credit. </div>
   </div>
-
 
 
 
@@ -126,37 +120,51 @@
   </footer>
   <!-- Footer -->
   <script>
-    (function($) {
+    filterSelection("all")
 
-      'use strict';
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
 
-      var $filters = $('.filter [data-filter]'),
-        $boxes = $('.boxes [data-color]');
-
-      $filters.on('click', function(e) {
-        e.preventDefault();
-        var $this = $(this);
-
-        $filters.removeClass('active');
-        $this.addClass('active');
-
-        var $filterColor = $this.attr('data-filter');
-
-        if ($filterColor == 'all') {
-          $boxes.removeClass('is-animated')
-            .fadeOut().promise().done(function() {
-              $boxes.addClass('is-animated').fadeIn();
-            });
-        } else {
-          $boxes.removeClass('is-animated')
-            .fadeOut().promise().done(function() {
-              $boxes.filter('[data-color = "' + $filterColor + '"]')
-                .addClass('is-animated').fadeIn();
-            });
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
         }
-      });
+      }
+    }
 
-    })(jQuery);
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
   </script>
 
 

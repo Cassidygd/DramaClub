@@ -2,7 +2,7 @@ html {
   background-image: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
 }
 
-/* navigation*/
+/* NAVIGATION*/
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
@@ -35,7 +35,7 @@ html {
   display: inline-block;
 }
 
-/*index*/
+/*INDEX*/
 .container-fluid {
   display: run-in;
   align-items: stretch;
@@ -74,71 +74,6 @@ html {
   max-width: 100%;
   max-height: 100%;
 }
-h4 {
-  font-size: 30px;
-
-}
-
-
-.now {
-  font-size: 60px;
-}
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  .now {
-    font-size: 60px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  .now {
-    font-size: 30px;
-    margin-left: 0;
-  }
-}
-
-.music {
-  font-size: 65px;
-  margin-bottom: 0;
-  font-family: 'Lobster', cursive;
-}
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  .music {
-    font-size: 65px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  .music {
-    font-size: 40px;
-    margin-left: 0;
-  }
-}
-@media (min-with: 600px) {
-  .sign {
-    width: 100%;
-  }
-
-  #movie {
-    width: 100%
-  }
-
-  .now {
-    width: 100%
-  }
-
-  .music {
-    width: 100%
-  }
-}
-
-.trailer {
-  text-align: center;
-  padding-top: 40px;
-}
 
 #movie {
   background-color: #FCFBF4;
@@ -154,17 +89,43 @@ h4 {
   text-align: center;
 }
 
+.now {
+  font-size: 60px;
+}
+
+.music {
+  font-size: 65px;
+  margin-bottom: 0;
+  font-family: 'Lobster', cursive;
+}
+/*END NOW SHOWING SIGN*/
+iframe {
+  padding-bottom: 30px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.trailer {
+  text-align: center;
+  padding-top: 40px;
+}
+
 .box {
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 70px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 25px;
   font-family: 'Staatliches', cursive;
 }
+
 .boxx {
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 20px;
   text-align: center;
   font-family: 'Staatliches', cursive;
 }
@@ -175,14 +136,17 @@ hr {
   background-color: black;
 }
 
+.imag {
+  padding-right: 20px;
+}
+
 .col-md-2 {
   padding-left: 25px;
   padding-right: 25px;
-   max-width: 60%;
-   max-height: 60%;
-   align-items: center;
+  max-width: 60%;
+  max-height: 60%;
+  align-items: center;
 }
-
 
 h1 {
   text-align: center;
@@ -210,61 +174,57 @@ gallery .carousel {
   }
 }
 
-/* aboutus*/
-#director {
-  background-color: #DABDBD;
-}
-
-#masks {
-  background-color: #DABDBD;
-}
-
 //* calendar*/
 .conn {
   background-color: #DABDBD;
   height: 500px;
 }
+
+/* aboutus*/
 .badge-default {
-  font-size: 30px;
+  font-size: 35px;
   padding-left: 50px;
+  font-family: 'Staatliches', cursive;
+  font-weight: 200;
+}
+
+dt {
+  font-family: 'Staatliches', cursive;
+  font-weight: 200;
+}
+
+dd {
+  font-size: 1.2em;
 }
 
 .direct {
-    padding-left: 120px;
-  }
+  padding-left: 120px;
+}
 
 .backstage {
   padding-left: 80px;
 }
 
+.cast {}
+
 #cal {
-  margin:0 auto;
-	position: relative;
-	height:0;
-	overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  height: 0;
+  overflow: hidden;
 }
+
 #cal iframe
+
 /*.vresponsive-iframe-container object,*/
 /*.vresponsive-iframe-container embed */
-{
-	position: absolute;
-	top:0;
-	left:0;
-	width: 100%;
-	height: 100%;
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding-bottom: 30px;
-}
-@media (max-width:549px) {
-	#cal {
-		padding-bottom:500px;
-    width:100%;
-	}
-}
-@media (min-width:550px) {
-  #cal {
-		padding-bottom:650px;
-    width:800px;
-	}
 }
 
 /* calendar*/
@@ -274,14 +234,7 @@ gallery .carousel {
   padding-top: 30px;
   background-color: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
 }
-
-//*.showing {
-font-size: 60px;
-font-family: 'Noticia Text', serif;
-font-weight: bold;
-}
-
-*/ #carousel {
+ #carousel {
   padding-bottom: 20px;
 }
 
@@ -439,7 +392,6 @@ body {
   justify-content: center;
 }
 
-
 .foot {
   padding-top: 25px;
   align-content: center;
@@ -453,23 +405,75 @@ body {
   align-content: stretch;
   background-color: white;
 }
-.filterDiv {
-  float: left;
-  background-color: #D3D3D3;
-  color: black;
-  width: 550px;
-  height: 200px;
-  margin: 5px;
-  display: none;
-  margin-left: auto;
+
+
+/*MEDIA QUERIES*/
+@media (max-width:549px) {
+  #cal {
+    padding-bottom: 500px;
+    width: 100%;
+  }
 }
 
-
-.show {
-  display: block;
+@media (min-width:550px) {
+  #cal {
+    padding-bottom: 650px;
+    width: 800px;
+  }
 }
 
-.container filter {
-  margin-top: 20px;
-  overflow: hidden;
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .music {
+    font-size: 65px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .music {
+    font-size: 40px;
+    margin-left: 0;
+  }
+}
+
+@media (min-with: 600px) {
+  .sign {
+    width: 100%;
+  }
+
+  #movie {
+    width: 100%;
+  }
+
+  .now {
+    width: 100%;
+    display: block;
+    list-style: none;
+    float: left;
+    position: absolute;
+  }
+
+  .music {
+    width: 100%;
+    display: block;
+    list-style-type: none;
+    float: left;
+    position: absolute;
+  }
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .now {
+    font-size: 60px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .now {
+    font-size: 30px;
+    margin-left: 0;
+  }
 }

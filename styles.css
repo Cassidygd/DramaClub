@@ -2,6 +2,11 @@ html {
   background-image: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
 }
 
+body {
+  background-image: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
+  min-height: 100vh;
+}
+
 /* NAVIGATION*/
 .navbar {
   margin-bottom: 0;
@@ -33,6 +38,17 @@ html {
   font-family: 'Staatliches', cursive;
   height: 65px;
   display: inline-block;
+}
+
+/*TITLE FOR EACH PAGE*/
+h1 {
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: white;
+  font-family: 'Vidaloka', serif;
+  font-size: 55px;
+  color: black;
 }
 
 /*INDEX*/
@@ -98,6 +114,7 @@ html {
   margin-bottom: 0;
   font-family: 'Lobster', cursive;
 }
+
 /*END NOW SHOWING SIGN*/
 iframe {
   padding-bottom: 30px;
@@ -105,11 +122,6 @@ iframe {
 
 h4 {
   font-size: 30px;
-}
-
-.trailer {
-  text-align: center;
-  padding-top: 40px;
 }
 
 .box {
@@ -136,6 +148,7 @@ hr {
   background-color: black;
 }
 
+/* ABOUT US PAGE*/
 .imag {
   padding-right: 20px;
 }
@@ -148,39 +161,6 @@ hr {
   align-items: center;
 }
 
-h1 {
-  text-align: center;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  background-color: white;
-  font-family: 'Vidaloka', serif;
-  font-size: 55px;
-  color: black;
-}
-
-gallery .carousel {
-  height: 550px;
-  width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  @media (max-width: 400px) {
-    .btn.filter {
-      padding-left: 1.1rem;
-      padding-right: 1.1rem;
-    }
-  }
-}
-
-//* calendar*/
-.conn {
-  background-color: #DABDBD;
-  height: 500px;
-}
-
-/* aboutus*/
 .badge-default {
   font-size: 35px;
   padding-left: 50px;
@@ -205,7 +185,12 @@ dd {
   padding-left: 80px;
 }
 
-.cast {}
+/* END OF THE ABOUT US PAGE */
+//* CALENDAR */
+.conn {
+  background-color: #DABDBD;
+  height: 500px;
+}
 
 #cal {
   margin: 0 auto;
@@ -214,11 +199,7 @@ dd {
   overflow: hidden;
 }
 
-#cal iframe
-
-/*.vresponsive-iframe-container object,*/
-/*.vresponsive-iframe-container embed */
-  {
+#cal iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -227,22 +208,12 @@ dd {
   padding-bottom: 30px;
 }
 
-/* calendar*/
-.vid {
-  align-items: center;
-  text-align: center;
-  padding-top: 30px;
-  background-color: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
-}
- #carousel {
-  padding-bottom: 20px;
-}
-
+/* ACADEMICS PAGE*/
 .col-md-4 {
   mix-blend-mode: multiply;
 }
 
-/* History Timeline */
+/* HISTORY PAGE */
 /* Timeline holder */
 ul.timeline {
   list-style-type: none;
@@ -296,40 +267,11 @@ li.timeline-item::before {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-body {
-  background-image: url("https://www.designbolts.com/wp-content/uploads/2013/02/Rose-Grey-Seamless-Patterns-For-Website-Background.jpg");
-  min-height: 100vh;
-}
-
 .text-gray {
   color: #999;
 }
 
-/*footer*/
-.page-footer {
-  background-color: white;
-}
-
-/*card in gallery*/
-.card {
-  transition: 0.3s;
-  width: 20%;
-}
-
-.container {
-  padding: 2px 16px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
+/* GALLERY PAGE*/
 .row {
   margin: 8px -16px;
 }
@@ -345,7 +287,6 @@ body {
   float: left;
   width: 33.33%;
   display: none;
-  /* Hide columns by default */
 }
 
 /* Clear floats after rows */
@@ -392,6 +333,11 @@ body {
   justify-content: center;
 }
 
+/* FOOTER PAGE */
+.page-footer {
+  background-color: white;
+}
+
 .foot {
   padding-top: 25px;
   align-content: center;
@@ -406,8 +352,27 @@ body {
   background-color: white;
 }
 
+img {
+  display: block;
+}
 
 /*MEDIA QUERIES*/
+gallery .carousel {
+  height: 550px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (max-width: 400px) {
+    .btn.filter {
+      padding-left: 1.1rem;
+      padding-right: 1.1rem;
+    }
+  }
+}
+
 @media (max-width:549px) {
   #cal {
     padding-bottom: 500px;

@@ -373,37 +373,41 @@ gallery .carousel {
   }
 }
 
-@media (max-width:549px) {
-  #cal {
-    padding-bottom: 500px;
-    width: 100%;
-  }
-}
-
-@media (min-width:550px) {
-  #cal {
-    padding-bottom: 650px;
-    width: 800px;
-  }
-}
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  .music {
-    font-size: 65px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
+/* If the screen size is 600px wide or less, set the font-size of <div> to 40px */
+@media screen and (max-width: 450px) {
   .music {
     font-size: 40px;
     margin-left: 0;
   }
+
+  #cal {
+    padding-bottom: 500px;
+    width: 100%;
+  }
+
+  .now {
+    font-size: 30px;
+    margin-left: 0;
+  }
 }
 
-@media (min-with: 600px) {
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (max-width: 800px) {
+  .navbar {
+    height: 80px;
+  }
+  .now {
+    font-size: 60px;
+    width: 110%;
+    display: block;
+    list-style-type: none;
+    float: left;
+  }
+
   .sign {
+    width: 100%;
+  }
+  .shrek {
     width: 100%;
   }
 
@@ -411,34 +415,18 @@ gallery .carousel {
     width: 100%;
   }
 
-  .now {
-    width: 100%;
-    display: block;
-    list-style: none;
-    float: left;
-    position: absolute;
-  }
-
   .music {
     width: 100%;
     display: block;
     list-style-type: none;
-    float: left;
-    position: absolute;
+    font-size: 65px;
   }
-}
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  .now {
-    font-size: 60px;
+  #cal {
+    padding-bottom: 650px;
+    width: 800px;
   }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  .now {
-    font-size: 30px;
-    margin-left: 0;
+  .promo {
+    visibility: collapse;
   }
 }

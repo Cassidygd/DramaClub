@@ -116,7 +116,7 @@ h1 {
 }
 
 /*END NOW SHOWING SIGN*/
-iframe {
+.tube iframe {
   padding-bottom: 30px;
 }
 
@@ -396,9 +396,10 @@ gallery .carousel {
   .navbar {
     height: 80px;
   }
+
   .now {
-    font-size: 60px;
-    width: 110%;
+    font-size: 45px;
+    width: 100%;
     display: block;
     list-style-type: none;
     float: left;
@@ -407,12 +408,19 @@ gallery .carousel {
   .sign {
     width: 100%;
   }
+
   .shrek {
-    width: 100%;
+    max-width: 100%;
+    text-align: center;
   }
 
   #movie {
-    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .box {
+    font-size: 20px;
   }
 
   .music {
@@ -422,11 +430,23 @@ gallery .carousel {
     font-size: 65px;
   }
 
-  #cal {
-    padding-bottom: 650px;
-    width: 800px;
-  }
   .promo {
     visibility: collapse;
+  }
+  #cal {
+    visibility: visible;
+    width: 100%;
+    padding-bottom: 500px;
+  }
+}
+
+@media screen and (max-width: 2100px) {
+  .promo {
+    visibility: collapse;
+  }
+  #cal {
+    visibility: visible;
+    width: 40%;
+    padding-bottom: 650px;
   }
 }

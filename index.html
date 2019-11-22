@@ -4,6 +4,9 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="description" content="Information Website about the Madison Drama Program">
+  <meta name="keywords" content="Madison Academic, Jmcss, MADrama">
+  <meta name="author" content="Monzerath Soriano, Cassidy Dyer, Grace Winters">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
@@ -16,6 +19,7 @@
 </head>
 
 <body>
+  <!-- navigation-->
   <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <a class="navbar-brand" href="index.html"><img src="img/madlogo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +48,7 @@
       </ul>
     </div>
   </nav>
+
   <!-- <div class="flex-container">
     <div style="flex-grow: .8"><img src="img/lord.jpg" width="900" height="900" alt="..." class="img-thumbnail"></div>
     <div id="movie" style="flex-grow: 5">
@@ -60,10 +65,12 @@
   <div class="vid">
     <iframe width="750" height="450" src="https://www.youtube.com/embed/g2VQ2pfXbyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div> -->
+
+  <!-- Promotion-->
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-2 promo">
-        <img src="img/promo.png" width="900" height="900" alt="..." class="img-thumbnail d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block" >
+        <img src="img/promo.png" width="900" height="900" alt="..." class="img-thumbnail d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block">
       </div>
       <div class="col-md-8 sign">
         <div id="movie">
@@ -79,6 +86,7 @@
       </div>
     </div>
   </div>
+  <!-- Introduction on website-->
   <div class="container-fluid two">
     <div class="row">
       <div class="col-md-3 box">
@@ -87,10 +95,12 @@
         <p>Welcome to MADrama! We seek to provide an outlet for students of Madison Academic Magnet High School to express themselves through the performing arts. We produce at least two main-stage productions a year and several smaller pieces for
           classroom production. Our drama club is also an integral part of the production of plays here at Madison Academic.</p>
       </div>
-      <div class="col-md-6 embed-responsive embed-responsive-16by9">
+      <!-- trailer on play resent/upcoming-->
+      <div class="col-md-6 embed-responsive embed-responsive-16by9 tube">
         <!-- <iframe width="800" height="500" src="https://www.youtube.com/embed/KhgqAfCd814" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
         <iframe class="embed-responsive-item" width="800" height="500" src="https://www.youtube.com/embed/NgmkSrmPOS4" frameborder="10px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+      <!-- upcoming show-->
       <div class="col-md-3 boxx">
         <h4>Our Upcoming Show:</h4>
         <img src="img/PlayOn.jpg" width="900" height="800" alt="..." class="img-thumbnail">
@@ -132,43 +142,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-    // Find all YouTube videos
-var $allVideos = $("iframe[src^='//www.youtube.com']"),
-
-    // The element that is fluid width
-    $fluidEl = $("body");
-
-// Figure out and save aspect ratio for each video
-$allVideos.each(function() {
-
-  $(this)
-    .data('aspectRatio', this.height / this.width)
-
-    // and remove the hard coded width/height
-    .removeAttr('height')
-    .removeAttr('width');
-
-});
-
-// When the window is resized
-$(window).resize(function() {
-
-  var newWidth = $fluidEl.width();
-
-  // Resize all videos according to their own aspect ratio
-  $allVideos.each(function() {
-
-    var $el = $(this);
-    $el
-      .width(newWidth)
-      .height(newWidth * $el.data('16:9'));
-
-  });
-
-// Kick off one resize to fix all videos on page load
-}).resize();
-</script>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -35,7 +35,7 @@ body {
   padding: 30px;
   padding-top: 5px;
   font-size: 1.2em;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Staatliches', sans-serif;
   height: 65px;
   display: inline-block;
 }
@@ -73,7 +73,7 @@ h1 {
   list-style-type: none;
   margin-top: 35px;
   text-align: center;
-  font-family: 'Diplomata', cursive;
+  font-family: 'Diplomata', sans-serif;
   min-height: 80%;
   min-width: 80%;
   list-style-position: outside;
@@ -112,7 +112,7 @@ h1 {
 .music {
   font-size: 65px;
   margin-bottom: 0;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster', sans-serif;
 }
 
 /*END NOW SHOWING SIGN*/
@@ -131,7 +131,7 @@ h4 {
   padding-bottom: 20px;
   text-align: center;
   font-size: 25px;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Staatliches', sans-serif;
 }
 
 .boxx {
@@ -139,7 +139,7 @@ h4 {
   padding-right: 40px;
   padding-bottom: 20px;
   text-align: center;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Staatliches', sans-serif;
 }
 
 hr {
@@ -164,12 +164,12 @@ hr {
 .badge-default {
   font-size: 35px;
   padding-left: 50px;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Staatliches', sans-serif;
   font-weight: 200;
 }
 
 dt {
-  font-family: 'Staatliches', cursive;
+  font-family: 'Staatliches', sans-serif;
   font-weight: 200;
 }
 
@@ -373,24 +373,29 @@ gallery .carousel {
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 40px */
-@media screen and (max-width: 450px) {
-  .music {
-    font-size: 40px;
-    margin-left: 0;
+}
+@media screen and (min-width: 1800px) {
+  .promo {
+    visibility: visible;
   }
-
   #cal {
-    padding-bottom: 500px;
-    width: 100%;
-  }
-
-  .now {
-    font-size: 30px;
-    margin-left: 0;
+    visibility: visible;
+    width: 50%;
+    padding-bottom: 650px;
   }
 }
-
+@media screen and (max-width: 1799px) {
+  .promo {
+    visibility: collapse;
+  }
+  #movie {
+    width: 100%;
+    float: left;
+  }
+  .shrek {
+    width: 100%;
+  }
+}
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (max-width: 800px) {
   .navbar {
@@ -412,11 +417,13 @@ gallery .carousel {
   .shrek {
     max-width: 100%;
     text-align: center;
+    float: left;
   }
 
   #movie {
     max-width: 100%;
     margin-left: 0;
+    float: left;
   }
 
   .box {
@@ -438,15 +445,22 @@ gallery .carousel {
     width: 100%;
     padding-bottom: 500px;
   }
-}
 
-@media screen and (max-width: 2100px) {
-  .promo {
-    visibility: collapse;
+}
+/* If the screen size is 450px wide or less, set the font-size of <div> to 40px */
+@media screen and (max-width: 450px) {
+  .music {
+    font-size: 40px;
+    margin-left: 0;
   }
+
   #cal {
-    visibility: visible;
-    width: 40%;
-    padding-bottom: 650px;
+    padding-bottom: 500px;
+    width: 100%;
+  }
+
+  .now {
+    font-size: 30px;
+    margin-left: 0;
   }
 }

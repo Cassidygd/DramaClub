@@ -373,29 +373,61 @@ gallery .carousel {
   }
 }
 
-}
-@media screen and (min-width: 1800px) {
+
+@media screen and (max-width: 2600px) {
   .promo {
     visibility: visible;
   }
+
+  #movie {
+    max-width: 100%;
+  }
+
   #cal {
     visibility: visible;
-    width: 50%;
-    padding-bottom: 650px;
+    padding-bottom: 500px;
+    width: 100%;
+  }
+
+  .conn {
+    visibility: visible;
   }
 }
+
 @media screen and (max-width: 1799px) {
   .promo {
     visibility: collapse;
   }
+
   #movie {
     width: 100%;
     float: left;
   }
+
   .shrek {
     width: 100%;
   }
+
+  #cal {
+    visibility: visible;
+    padding-bottom: 500px;
+    width: 100%;
+  }
+
+  .conn {
+    visibility: visible;
+  }
 }
+
+@media screen and (max-width: 1250px) {
+  #collapsibleNavbar {
+    display: none;
+  }
+  .navbar-item {
+    display: block;
+  }
+}
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (max-width: 800px) {
   .navbar {
@@ -408,6 +440,7 @@ gallery .carousel {
     display: block;
     list-style-type: none;
     float: left;
+    margin-left: 0;
   }
 
   .sign {
@@ -422,7 +455,6 @@ gallery .carousel {
 
   #movie {
     max-width: 100%;
-    margin-left: 0;
     float: left;
   }
 
@@ -435,18 +467,15 @@ gallery .carousel {
     display: block;
     list-style-type: none;
     font-size: 65px;
+    margin-left: 0;
   }
 
   .promo {
     visibility: collapse;
   }
-  #cal {
-    visibility: visible;
-    width: 100%;
-    padding-bottom: 500px;
-  }
 
 }
+
 /* If the screen size is 450px wide or less, set the font-size of <div> to 40px */
 @media screen and (max-width: 450px) {
   .music {
@@ -455,6 +484,7 @@ gallery .carousel {
   }
 
   #cal {
+    visibility: visible;
     padding-bottom: 500px;
     width: 100%;
   }

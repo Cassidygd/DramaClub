@@ -193,17 +193,17 @@ dd {
 }
 
 #cal {
-  margin: 0 auto;
   position: relative;
   height: 0;
   overflow: hidden;
+  margin: 55px 15px;
 }
 
 #cal iframe {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 95%;
   height: 100%;
   padding-bottom: 30px;
 }
@@ -270,7 +270,9 @@ li.timeline-item::before {
 .text-gray {
   color: #999;
 }
-
+var {
+  font-style: italic;
+}
 /* GALLERY PAGE*/
 .row {
   margin: 8px -16px;
@@ -419,12 +421,16 @@ gallery .carousel {
   }
 }
 
-@media screen and (max-width: 1250px) {
-  #collapsibleNavbar {
-    display: none;
+@media screen and (max-width: 1300px) {
+  #movie {
+    max-width: 100%;
+    float: center;
   }
-  .navbar-item {
-    display: block;
+  .box {
+    padding-bottom: 50px;
+  }
+  .tube iframe {
+    padding-bottom: 50px;
   }
 }
 
@@ -455,7 +461,7 @@ gallery .carousel {
 
   #movie {
     max-width: 100%;
-    float: left;
+    float: center;
   }
 
   .box {

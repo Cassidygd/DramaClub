@@ -210,9 +210,7 @@ dd {
 }
 
 /* ACADEMICS PAGE*/
-.col-md-4 {
-  mix-blend-mode: multiply;
-}
+
 
 /* HISTORY PAGE */
 /* Timeline holder */
@@ -409,10 +407,14 @@ gallery .carousel {
   #movie {
     width: 100%;
     float: left;
+    list-style: none;
+    margin-left: 0;
   }
 
   .shrek {
     width: 100%;
+    list-style: none;
+    margin-left: 0;
   }
 
   #cal {
@@ -427,6 +429,14 @@ gallery .carousel {
   }
   .conn {
     visibility: visible;
+  }
+  .now {
+    font-size: 50px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+  }
+  .music {
+    font-size: 60px;
   }
 }
 
@@ -478,6 +488,8 @@ gallery .carousel {
 
   .sign {
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .shrek {
@@ -493,6 +505,9 @@ gallery .carousel {
 
   .box {
     font-size: 20px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .music {
@@ -505,9 +520,6 @@ gallery .carousel {
 
   .promo {
     visibility: collapse;
-  }
-  .box {
-    margin-left: 50px;
   }
   #cal {
     width: 80%;
@@ -525,7 +537,7 @@ gallery .carousel {
 @media screen and (max-width: 450px) {
   .music {
     font-size: 40px;
-    margin-left: 0;
+    margin: 0;
   }
 
   #cal {
@@ -537,6 +549,23 @@ gallery .carousel {
   }
   .now {
     font-size: 30px;
+    margin-left: .25;
+  }
+  .box {
+    font-size: 18px;
+    padding-left: 0;
+    margin-left: 50px;
+  }
+  .shrek {
+    left: 0;
+    float: left;
+    list-style: none;
     margin-left: 0;
+  }
+  #movie {
+    left: 0;
+    float: left;
+    list-style: none;
+    margin-left: .50;
   }
 }

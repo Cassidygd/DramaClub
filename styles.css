@@ -124,7 +124,7 @@ h4 {
   font-size: 30px;
 }
 
-.box {
+.intro {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
@@ -210,8 +210,6 @@ dd {
 }
 
 /* ACADEMICS PAGE*/
-
-
 /* HISTORY PAGE */
 /* Timeline holder */
 ul.timeline {
@@ -269,9 +267,11 @@ li.timeline-item::before {
 .text-gray {
   color: #999;
 }
+
 var {
   font-style: italic;
 }
+
 /* GALLERY PAGE*/
 .row {
   margin: 8px -16px;
@@ -347,6 +347,19 @@ var {
   padding-left: 20%;
 }
 
+.mx-3 {
+  color: black;
+  font-size: 25px;
+  font-family: 'Staatliches', sans-serif;
+  opacity: .5;
+}
+
+.mx-3:hover {
+  color: black;
+  opacity: 1;
+  text-decoration: none;
+}
+
 .end {
   width: 100%;
   align-content: stretch;
@@ -374,7 +387,6 @@ gallery .carousel {
   }
 }
 
-
 @media screen and (max-width: 2600px) {
   .promo {
     visibility: visible;
@@ -391,9 +403,11 @@ gallery .carousel {
     left: 15%;
     height: 50em;
   }
+
   #cal iframe {
     height: 50em;
   }
+
   .conn {
     visibility: visible;
   }
@@ -422,19 +436,22 @@ gallery .carousel {
     width: 80%;
     left: 10%;
     height: 50em;
-
   }
+
   #cal iframe {
     height: 50em;
   }
+
   .conn {
     visibility: visible;
   }
+
   .now {
     font-size: 50px;
     padding-bottom: 20px;
     padding-top: 25px;
   }
+
   .music {
     font-size: 60px;
   }
@@ -445,27 +462,37 @@ gallery .carousel {
     max-width: 100%;
     float: center;
   }
-  .box {
+
+  .intro {
     padding-bottom: 50px;
   }
+
   .tube iframe {
     padding-bottom: 50px;
   }
+
   .nav-item {
     padding: 10px;
   }
+
   .music {
     width: 100%;
     display: block;
     list-style-type: none;
-    font-size: 65px;
+    font-size: 60px;
   }
+
+  .now {
+    font-size: 40px;
+  }
+
   #cal {
     width: 80%;
     left: 10%;
     margin-bottom: 50px;
     height: 40em;
   }
+
   #cal iframe {
     height: 40em;
   }
@@ -478,32 +505,34 @@ gallery .carousel {
   }
 
   .now {
-    font-size: 45px;
+    font-size: 40px;
     width: 100%;
     display: block;
     list-style-type: none;
     float: left;
     margin-left: 0;
+    padding-top: 0;
   }
 
   .sign {
     width: 100%;
     margin-top: 0;
     margin-bottom: 0;
+    justify-content: center;
   }
 
   .shrek {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
-    float: left;
+    float: none;
   }
 
   #movie {
-    max-width: 100%;
+    width: 100%;
     float: center;
   }
 
-  .box {
+  .intro {
     font-size: 20px;
     margin-left: 0;
     padding-top: 0;
@@ -514,13 +543,16 @@ gallery .carousel {
     width: 100%;
     display: block;
     list-style-type: none;
-    font-size: 65px;
-    margin-left: 0;
+    font-size: 60px;
+    margin: 0;
   }
 
   .promo {
     visibility: collapse;
+    display: none;
+    margin: 0;
   }
+
   #cal {
     width: 80%;
     margin-left: 50px;
@@ -528,6 +560,7 @@ gallery .carousel {
     margin-bottom: 50px;
     height: 35em;
   }
+
   #cal iframe {
     height: 35em;
   }
@@ -547,25 +580,39 @@ gallery .carousel {
     margin-left: 0;
     left: 4%;
   }
+
   .now {
     font-size: 30px;
     margin-left: .25;
   }
-  .box {
+
+  .intro {
     font-size: 18px;
     padding-left: 0;
     margin-left: 50px;
   }
+
   .shrek {
     left: 0;
     float: left;
     list-style: none;
     margin-left: 0;
   }
+
   #movie {
     left: 0;
     float: left;
     list-style: none;
     margin-left: .50;
+  }
+
+  .one {
+    position: absolute;
+    padding: 0px 50px;
+    left: 50px;
+  }
+
+  .sign {
+    left: 0;
   }
 }

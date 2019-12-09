@@ -210,6 +210,15 @@ dd {
 }
 
 /* ACADEMICS PAGE*/
+.emics {
+  padding-left: 7em;
+}
+.too {
+  padding-left: 20px;
+}
+.three {
+  padding-left: 25px;
+}
 /* HISTORY PAGE */
 /* Timeline holder */
 ul.timeline {
@@ -344,7 +353,7 @@ var {
   align-content: center;
   height: 50px;
   background-color: white;
-  padding-left: 20%;
+  padding-left: 22%;
 }
 
 .mx-3 {
@@ -361,7 +370,7 @@ var {
 }
 
 .end {
-  width: 100%;
+  max-width: 100%;
   align-content: stretch;
   background-color: white;
 }
@@ -465,10 +474,17 @@ gallery .carousel {
 
   .intro {
     padding-bottom: 50px;
+    padding-top: 0;
+    font-size: 18px;
   }
 
   .tube iframe {
     padding-bottom: 50px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 
   .nav-item {
@@ -480,6 +496,13 @@ gallery .carousel {
     display: block;
     list-style-type: none;
     font-size: 60px;
+  }
+
+  .tube {
+    overflow: hidden;
+    padding-bottom: 35%;
+    position: relative;
+    height: 0;
   }
 
   .now {
@@ -496,6 +519,7 @@ gallery .carousel {
   #cal iframe {
     height: 40em;
   }
+
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */

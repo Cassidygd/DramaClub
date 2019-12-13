@@ -353,7 +353,7 @@ var {
   align-content: center;
   height: 50px;
   background-color: white;
-  padding-left: 22%;
+  padding-left: 17%;
 }
 
 .mx-3 {
@@ -361,6 +361,7 @@ var {
   font-size: 25px;
   font-family: 'Staatliches', sans-serif;
   opacity: .5;
+  align-content: left;
 }
 
 .mx-3:hover {
